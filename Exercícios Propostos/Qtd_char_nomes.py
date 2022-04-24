@@ -4,7 +4,7 @@ qtd_char = len(nome)
 
 if qtd_char <= 4:
     print(' Seu nome é curto.')
-elif qtd_char > 4 and qtd_char < 6:
+elif qtd_char <= 6:
     print(' Seu nome é normal.')
 else:
     print(' Seu nome é muito grande.')
