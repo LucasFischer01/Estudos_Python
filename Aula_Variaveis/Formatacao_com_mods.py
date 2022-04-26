@@ -21,16 +21,16 @@ print(f'{nome:s} {idade:d} {altura:f}')
 num_1 = 13
 num_2 = 15
 aux = num_1 / num_2
-print(f'{aux:.2f} {aux:.2}')#Fstring
-print('{:.2}'.format(aux)) #Format
+print(f'{aux:.2f} {aux:.2}')  # Fstring
+print('{:.2}'.format(aux))  # Format
 
-#Completando caracteres 
+# Completando caracteres
 print(f'{nome:@>10}'), print('{:@>10}'.format(nome))
-print(f'{nome:@<10}') 
-print(f'{nome:@^10}') 
+print(f'{nome:@<10}')
+print(f'{nome:@^10}')
 
 # Edição de impressão
 nome_1 = 'lucas fischer'
-print(nome_1.lower()) # Imprime todas as letras minúsculas
-print(nome_1.upper()) # Imprime todas as letras maiúsculas
-print(nome_1.capitalize())# imprime as primeiras letras maiúsculas
+print(nome_1.lower())  # Imprime todas as letras minúsculas
+print(nome_1.upper())  # Imprime todas as letras maiúsculas
+print(nome_1.capitalize())  # imprime as primeiras letras maiúsculas
