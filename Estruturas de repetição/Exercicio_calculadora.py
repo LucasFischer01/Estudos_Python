@@ -1,19 +1,20 @@
 def to_number(x):
-    if "." in x:
-        return float(x)
-    else:
-        return int(x)
+    try:
+        if "." in x:
+            return float(x)
+        else:
+            return int(x)
+    except ValueError:
+        print("Digite um número válido")
+        calculadora()
 
 def calculadora():        
     while True:
         num_1 = input('Digite o primeiro número: ')
+        num_1 = to_number(num_1)
         num_2 = input('Digite o segundo número: ')
-        if not num_1.isnumeric() or not num_2.isnumeric():
-            print('Digite um número válido')
-            calculadora()
+        num_2 = to_number(num_2)
         while True:
-            num_1 = to_number(num_1)
-            num_2 = to_number(num_2)
             op = input('Digite o operador: (+, -, / ou *): ')
             if op == '+':
                 x = num_1 + num_2
