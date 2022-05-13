@@ -8,7 +8,7 @@ print(f' A palavra possui {dica} letras')
 chances = 3
 while True:
     if chances <= 0:
-        print(' GAME OVER. ')
+        print(' GAME OVER.\n ')
         break
     letra = input('Digite uma letra: ')
     if len(letra) > 1:
@@ -33,4 +33,4 @@ while True:
         break
     if letra not in palavra_secreta:
         chances -= 1
-    print(f'Você ainda tem {chances} chances.')
+    print(f'Você ainda tem {chances} chances.\n')
