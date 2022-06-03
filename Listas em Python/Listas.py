@@ -1,4 +1,4 @@
-'''# Exemplo prático de lista.
+# Exemplo prático de lista.
 
 lista = ['string', 11, 23.5, True]
 # índices    0        1     2      3
@@ -23,12 +23,12 @@ l6.append('novo elemento')
 print(l6)
 
 # Adicionando variáveis em um índice desejado.
-la = [ 'a', 'b', 'c']
+la = ['a', 'b', 'c']
 print(la)
-la.insert(0,'d')
+la.insert(0, 'd')
 print(la)
 
-#Excluindo a última variável da lista.
+# Excluindo a última variável da lista.
 la.pop()
 print(la)
 
@@ -42,7 +42,7 @@ print(lb)
 # classificando valor mínimo e valor máximo.
 lc = [0, 1, 2, 3, 15, 4, 5, 6, 7, 8, 9]
 print(max(lc))
-print(min(lc))'''
+print(min(lc))
 
 # utilização função List + range.
 ld = list(range(1, 10))
